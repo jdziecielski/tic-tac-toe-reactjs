@@ -1,0 +1,59 @@
+:root {
+    --gameButtonSize: 100px;
+    --gameButtonMargin: 5px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.spot {
+    width: var(--gameButtonSize);
+    height: var(--gameButtonSize);
+    margin: var(--gameButtonMargin);
+    font-size: 50px;
+    vertical-align: middle;
+    border-radius: 15%;
+}
+
+.board {
+    width: calc((var(--gameButtonSize) * 3) + (var(--gameButtonMargin) * 6));
+    height: calc((var(--gameButtonSize) * 3) + (var(--gameButtonMargin) * 6));
+    margin: auto;
+    position: relative;
+    top: 50px;
+    margin-bottom: 70px;
+}
+
+.info {
+    text-align: center;
+}
+
+.scoreboard {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    left: 25%;
+}
+
+.score {
+    float: left;
+    width: calc(33.33%);
+    margin-bottom: 50px;
+}
+
+.restartButtonDiv {
+    position: relative;
+}
+
+.restartButton {
+    margin:0 auto;
+    display:block;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
